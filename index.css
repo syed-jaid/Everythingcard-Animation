@@ -1,0 +1,217 @@
+body {
+  background: #fff1c1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.Phone-main-div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-screen {
+  width: 257px;
+  height: 548px;
+  background: #006f69;
+  position: absolute;
+  top: 6px;
+  right: 7px;
+  border-radius: 34px;
+  z-index: -1;
+}
+
+.phone-camera {
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.screen-time {
+  position: absolute;
+  top: 76px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.element-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.element-2 {
+  position: absolute;
+  left: 20%;
+  top: 40%;
+}
+
+.element-3 {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
+
+.element-with-text {
+  position: absolute;
+  top: 33px;
+  opacity: 0;
+}
+
+.element-with-text-animation {
+  opacity: 0;
+  transform: scale(1);
+  animation: element-text-animation 4.5s ease-in-out forwards,
+    element-text-animation-end 1s ease-in-out 5.5s forwards;
+}
+
+.notification-main-div {
+  height: 50px;
+  padding: 0 7px;
+  z-index: 10;
+  width: 80%;
+  background: white;
+  border-radius: 12px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(100%);
+  animation: notification-slide-up 0.8s ease-in-out forwards,
+    notification-scale-effect 1s ease-in-out 1s forwards,
+    notification-opacity-down 2s ease-in-out 2s forwards;
+}
+
+.notification-main-div div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.notification-msg-text {
+  color: #181818;
+  font-size: 12px;
+}
+
+.confetti-image {
+  position: absolute;
+  width: 200px;
+  opacity: 0;
+  transform: scale(1);
+  animation: confetti-effect 1.8s ease-in-out 1s forwards,
+    confetti-opacity-down 0.4s ease-in 3s forwards;
+}
+
+@keyframes notification-slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes notification-scale-effect {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+
+@keyframes confetti-effect {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(3.5);
+  }
+}
+
+@keyframes notification-opacity-down {
+  0% {
+    opacity: 1;
+    transform: scale(2);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+@keyframes confetti-opacity-down {
+  0% {
+    opacity: 1;
+    transform: scale(3.5);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(3.5);
+  }
+}
+
+@keyframes element-text-animation {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(2.3) translateY(5%);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(2.3) translateY(-20%);
+  }
+}
+
+@keyframes element-text-animation {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(2.3) translateY(5%);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(2.3) translateY(-20%);
+  }
+}
+
+@keyframes element-text-animation-end {
+  0% {
+    opacity: 1;
+    transform: scale(2.3) translateY(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.2) translateY(-150%);
+  }
+}
