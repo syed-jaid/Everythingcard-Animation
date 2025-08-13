@@ -1,263 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Everythingcard Animation</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <!-- 1st phone frame animation -->
-    <section class="Phone-main-div" style="display: none">
-      <img
-        class="phone-frame-1"
-        src="/assets/images/phone.png"
-        alt="Everythingcard mobile frame"
-      />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Everythingcard Animation</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+</head>
 
-      <!-- phone screen -->
-      <div class="phone-screen">
-        <!-- screen element and camera -->
-        <img
-          class="phone-camera"
-          src="/assets/images/camera.png"
-          alt="camera"
-        />
-        <img
-          class="screen-time"
-          src="/assets/images/screen-time.png"
-          alt="screen time"
-        />
-        <img
-          class="element-1"
-          src="/assets/images/screen-element-1.png"
-          alt="screen element"
-        />
-        <img
-          class="element-2"
-          src="/assets/images/screen-element-2.png"
-          alt="screen element"
-        />
-        <img
-          class="element-3"
-          src="/assets/images/screen-element-3.png"
-          alt="screen element"
-        />
+<body>
+  <!-- 1st phone frame animation -->
+  <section class="Phone-main-div" style="display: none">
+    <img class="phone-frame-1" src="/assets/images/phone.png" alt="Everythingcard mobile frame" />
+
+    <!-- phone screen -->
+    <div class="phone-screen">
+      <!-- screen element and camera -->
+      <img class="phone-camera" src="/assets/images/camera.png" alt="camera" />
+      <img class="screen-time" src="/assets/images/screen-time.png" alt="screen time" />
+      <img class="element-1" src="/assets/images/screen-element-1.png" alt="screen element" />
+      <img class="element-2" src="/assets/images/screen-element-2.png" alt="screen element" />
+      <img class="element-3" src="/assets/images/screen-element-3.png" alt="screen element" />
+    </div>
+
+    <!-- element with text -->
+    <img class="element-with-text" src="/assets/images/screen-element-with-text.png" alt="screen element" />
+
+    <!-- confetti -->
+    <img class="confetti-image" src="/assets/images/notification-Confetti.png" alt="Confetti for notification" />
+    <!-- notification div  -->
+    <div class="notification-main-div">
+      <div>
+        <img style="width: 35px" src="/assets/images/notification-message.png" alt="notification message image" />
+        <p class="notification-msg-text">
+          {Sender} Sent You an EverythingCard!
+        </p>
       </div>
+      <p style="color: #3f3f3f; font-size: 9px; margin-right: 5px">now</p>
+    </div>
+  </section>
 
-      <!-- element with text -->
-      <img
-        class="element-with-text"
-        src="/assets/images/screen-element-with-text.png"
-        alt="screen element"
-      />
 
-      <!-- confetti -->
-      <img
-        class="confetti-image"
-        src="/assets/images/notification-Confetti.png"
-        alt="Confetti for notification"
-      />
-      <!-- notification div  -->
-      <div class="notification-main-div">
-        <div>
-          <img
-            style="width: 35px"
-            src="/assets/images/notification-message.png"
-            alt="notification message image"
-          />
-          <p class="notification-msg-text">
-            {Sender} Sent You an EverythingCard!
-          </p>
-        </div>
-        <p style="color: #3f3f3f; font-size: 9px; margin-right: 5px">now</p>
-      </div>
-    </section>
+  <!-- ????????? -->
+  <div class="main-inner-card" style="display: none;">
+    <img class="inner-card-2" src="/assets/images/inner card 2.png" alt="inner card 1" />
+    <!-- inner card 1 -->
+    <div class="inner-card-1">
+      <img class="card-element-1" src="/assets/images/innercard/element-1.png" alt="element 1" style="z-index: 5" />
+      <img class="card-element-2" src="/assets/images/innercard/element-2.png" alt="element 2" style="z-index: 6" />
+      <img class="card-element-3" src="/assets/images/innercard/element-3.png" alt="element 3" style="z-index: 3" />
+      <img class="card-element-4" src="/assets/images/innercard/svg-3.svg" alt="element 5" style="z-index: 2" />
 
-    <!-- card animation -->
-    <section class="card-main-div" style="display: none">
-      <!-- card top text  -->
-      <div class="card-top-sender-text LibreFont">
-        <h1>Sender Name</h1>
-        <p>has sent you an EverythingCard!</p>
-      </div>
-      <!-- main-card -->
-      <div class="main-card">
-        <!-- main inner card -->
-        <div class="main-inner-card">
-          <img
-            class="inner-card-2"
-            src="/assets/images/inner card 2.png"
-            alt="inner card 1"
-          />
-          <!-- inner card 1 -->
-          <div class="inner-card-1">
-            <img
-              class="element-1"
-              src="/assets/images/innercard/element-1.png"
-              alt="element 1"
-              style="z-index: 5"
-            />
-            <img
-              class="element-2"
-              src="/assets/images/innercard/element-2.png"
-              alt="element 2"
-              style="z-index: 6"
-            />
-            <img
-              class="element-3"
-              src="/assets/images/innercard/element-3.png"
-              alt="element 3"
-              style="z-index: 3"
-            />
-            <img
-              class="element-4"
-              src="/assets/images/innercard/svg-3.svg"
-              alt="element 5"
-              style="z-index: 2"
-            />
-
-            <div
-              class="element-5"
-              style="
+      <div class="card-element-5" style="
                 z-index: 2;
                 width: 485px;
                 height: 461px;
                 background-color: #b41e23;
-              "
-            >
-              <img
-                class="element-5"
-                src="/assets/images/innercard/element-4.png"
-                alt="element 5"
-                style="z-index: 1"
-              />
-            </div>
+              ">
+        <img class="card-element-5" src="/assets/images/innercard/element-4.png" alt="element 5" style="z-index: 1" />
+      </div>
+    </div>
+    <!-- gift button  -->
+    <img class="gift-btn" src="/assets/images/gift-btn.png" alt="inner card 1" />
+  </div>
+  <!-- ????????? -->
+
+  <!-- card animation -->
+  <section class="card-main-div">
+    <!-- card top text  -->
+    <div class="card-top-sender-text LibreFont">
+      <h1>Sender Name</h1>
+      <p>has sent you an EverythingCard!</p>
+    </div>
+    <!-- main-card -->
+    <div class="main-card">
+      <!-- main inner card -->
+      <div class="main-inner-card">
+        <img class="inner-card-2" src="/assets/images/inner card 2.png" alt="inner card 1" />
+        <!-- inner card 1 -->
+        <div class="inner-card-1">
+          <img class="card-element-1" src="/assets/images/innercard/element-1.png" alt="element 1" style="z-index: 5" />
+          <img class="card-element-2" src="/assets/images/innercard/element-2.png" alt="element 2" style="z-index: 6" />
+          <img class="card-element-3" src="/assets/images/innercard/element-3.png" alt="element 3" style="z-index: 3" />
+          <img class="card-element-4" src="/assets/images/innercard/svg-3.svg" alt="element 5" style="z-index: 2" />
+
+          <div class="card-element-5" style="
+                z-index: 2;
+                width: 485px;
+                height: 461px;
+                background-color: #b41e23;
+              ">
+            <img class="card-element-5" src="/assets/images/innercard/element-4.png" alt="element 5"
+              style="z-index: 1" />
           </div>
-          <!-- gift button  -->
-          <img
-            class="gift-btn"
-            src="/assets/images/gift-btn.png"
-            alt="inner card 1"
-          />
         </div>
-        <div class="card-under-part">
-          <div></div>
-        </div>
-        <div class="card-back-part"></div>
-        <img
-          class="card-stamp"
-          src="/assets/images/card-stamp.png"
-          alt="card stamp"
-        />
+        <!-- gift button  -->
+        <img class="gift-btn" src="/assets/images/gift-btn.png" alt="inner card 1" />
+      </div>
+      <div class="card-under-part">
+        <div></div>
+      </div>
+      <div class="card-back-part"></div>
+      <img class="card-stamp" src="/assets/images/card-stamp.png" alt="card stamp" />
 
-        <div class="card-top-after-open">
-          <div class="solid"></div>
-          <div class="golden-line"></div>
-        </div>
+      <div class="card-top-after-open">
+        <div class="solid"></div>
+        <div class="golden-line"></div>
+      </div>
 
-        <div class="card-top-part">
-          <div class="solid"></div>
-          <div class="golden-line"></div>
-        </div>
+      <div class="card-top-part">
+        <div class="solid"></div>
+        <div class="golden-line"></div>
+      </div>
 
-        <div class="card-bottom-part">
-          <div class="solid"></div>
-          <div class="golden-line"></div>
+      <div class="card-bottom-part">
+        <div class="solid"></div>
+        <div class="golden-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- last phone screen  -->
+  <div class="phone-2-main-div" style="display: none">
+    <section class="phone-2-screen">
+      <img class="phone-frame-2" src="/assets/images/phone-2.png" alt="Everythingcard mobile frame" />
+
+      <img class="phone-frame-2-logo" src="/assets/images/everything-card-logo.png" alt="Everythingcard logo" />
+
+      <div class="blur-layout"></div>
+
+      <p class="phone-2-secreen-text">Amount: 100$</p>
+      <div class="all-brand-div">
+        <div class="brand-div">
+          <div class="div-top"></div>
+          <div class="div-bottom"></div>
+          <div>
+            <img src="./assets/brandlogo/logo (19).png" alt="logo 1" />
+            <img src="./assets/brandlogo/logo (2).png" alt="logo 2" />
+            <img src="./assets/brandlogo/logo (3).png" alt="logo 3" />
+            <img src="./assets/brandlogo/logo (4).png" alt="logo 4" />
+            <img src="./assets/brandlogo/logo (5).png" alt="logo 5" />
+            <img src="./assets/brandlogo/logo (6).png" alt="logo 6" />
+            <img src="./assets/brandlogo/logo (7).png" alt="logo 7" />
+            <img src="./assets/brandlogo/logo (8).png" alt="logo 8" />
+            <img src="./assets/brandlogo/logo (9).png" alt="logo 9" />
+            <img src="./assets/brandlogo/logo (10).png" alt="logo 10" />
+            <img src="./assets/brandlogo/logo (11).png" alt="logo 11" />
+            <img src="./assets/brandlogo/logo (12).png" alt="logo 12" />
+            <img src="./assets/brandlogo/logo (13).png" alt="logo 13" />
+            <img src="./assets/brandlogo/logo (14).png" alt="logo 14" />
+            <img src="./assets/brandlogo/logo (15).png" alt="logo 15" />
+            <img src="./assets/brandlogo/logo (16).png" alt="logo 16" />
+            <img src="./assets/brandlogo/logo (17).png" alt="logo 17" />
+            <img src="./assets/brandlogo/logo (18).png" alt="logo 18" />
+            <img src="./assets/brandlogo/logo (1).png" alt="logo 19" />
+            <img src="./assets/brandlogo/logo (14).png" alt="logo 20" />
+            <img src="./assets/brandlogo/logo (10).png" alt="logo 10" />
+            <img src="./assets/brandlogo/logo (11).png" alt="logo 11" />
+            <img src="./assets/brandlogo/logo (12).png" alt="logo 12" />
+            <img src="./assets/brandlogo/logo (13).png" alt="logo 13" />
+            <img src="./assets/brandlogo/logo (19).png" alt="logo 14" />
+            <img src="./assets/brandlogo/logo (15).png" alt="logo 15" />
+            <img src="./assets/brandlogo/logo (16).png" alt="logo 16" />
+            <img src="./assets/brandlogo/logo (13).png" alt="logo 17" />
+            <img src="./assets/brandlogo/logo (8).png" alt="logo 18" />
+            <img src="./assets/brandlogo/logo (1).png" alt="logo 19" />
+            <img src="./assets/brandlogo/logo (14).png" alt="logo 20" />
+            <img src="./assets/brandlogo/logo (4).png" alt="logo 20" />
+            <img src="./assets/brandlogo/logo (19).png" alt="logo 1" />
+            <img src="./assets/brandlogo/logo (2).png" alt="logo 2" />
+            <img src="./assets/brandlogo/logo (3).png" alt="logo 3" />
+            <img src="./assets/brandlogo/logo (4).png" alt="logo 4" />
+            <img src="./assets/brandlogo/logo (5).png" alt="logo 5" />
+            <img src="./assets/brandlogo/logo (6).png" alt="logo 6" />
+            <img src="./assets/brandlogo/logo (7).png" alt="logo 7" />
+            <img src="./assets/brandlogo/logo (8).png" alt="logo 8" />
+            <img src="./assets/brandlogo/logo (9).png" alt="logo 9" />
+            <img src="./assets/brandlogo/logo (10).png" alt="logo 10" />
+            <img src="./assets/brandlogo/logo (11).png" alt="logo 11" />
+            <img src="./assets/brandlogo/logo (12).png" alt="logo 12" />
+          </div>
         </div>
       </div>
     </section>
-
-    <!-- last phone screen  -->
-    <div class="phone-2-main-div" style="display: none">
-      <section class="phone-2-screen">
-        <img
-          class="phone-frame-2"
-          src="/assets/images/phone-2.png"
-          alt="Everythingcard mobile frame"
-        />
-
-        <img
-          class="phone-frame-2-logo"
-          src="/assets/images/everything-card-logo.png"
-          alt="Everythingcard logo"
-        />
-
-        <div class="blur-layout"></div>
-
-        <p class="phone-2-secreen-text">Amount: 100$</p>
-        <div class="all-brand-div">
-          <div class="brand-div">
-            <div class="div-top"></div>
-            <div class="div-bottom"></div>
-            <div>
-              <img src="./assets/brandlogo/logo (19).png" alt="logo 1" />
-              <img src="./assets/brandlogo/logo (2).png" alt="logo 2" />
-              <img src="./assets/brandlogo/logo (3).png" alt="logo 3" />
-              <img src="./assets/brandlogo/logo (4).png" alt="logo 4" />
-              <img src="./assets/brandlogo/logo (5).png" alt="logo 5" />
-              <img src="./assets/brandlogo/logo (6).png" alt="logo 6" />
-              <img src="./assets/brandlogo/logo (7).png" alt="logo 7" />
-              <img src="./assets/brandlogo/logo (8).png" alt="logo 8" />
-              <img src="./assets/brandlogo/logo (9).png" alt="logo 9" />
-              <img src="./assets/brandlogo/logo (10).png" alt="logo 10" />
-              <img src="./assets/brandlogo/logo (11).png" alt="logo 11" />
-              <img src="./assets/brandlogo/logo (12).png" alt="logo 12" />
-              <img src="./assets/brandlogo/logo (13).png" alt="logo 13" />
-              <img src="./assets/brandlogo/logo (14).png" alt="logo 14" />
-              <img src="./assets/brandlogo/logo (15).png" alt="logo 15" />
-              <img src="./assets/brandlogo/logo (16).png" alt="logo 16" />
-              <img src="./assets/brandlogo/logo (17).png" alt="logo 17" />
-              <img src="./assets/brandlogo/logo (18).png" alt="logo 18" />
-              <img src="./assets/brandlogo/logo (1).png" alt="logo 19" />
-              <img src="./assets/brandlogo/logo (14).png" alt="logo 20" />
-              <img src="./assets/brandlogo/logo (10).png" alt="logo 10" />
-              <img src="./assets/brandlogo/logo (11).png" alt="logo 11" />
-              <img src="./assets/brandlogo/logo (12).png" alt="logo 12" />
-              <img src="./assets/brandlogo/logo (13).png" alt="logo 13" />
-              <img src="./assets/brandlogo/logo (19).png" alt="logo 14" />
-              <img src="./assets/brandlogo/logo (15).png" alt="logo 15" />
-              <img src="./assets/brandlogo/logo (16).png" alt="logo 16" />
-              <img src="./assets/brandlogo/logo (13).png" alt="logo 17" />
-              <img src="./assets/brandlogo/logo (8).png" alt="logo 18" />
-              <img src="./assets/brandlogo/logo (1).png" alt="logo 19" />
-              <img src="./assets/brandlogo/logo (14).png" alt="logo 20" />
-              <img src="./assets/brandlogo/logo (4).png" alt="logo 20" />
-              <img src="./assets/brandlogo/logo (19).png" alt="logo 1" />
-              <img src="./assets/brandlogo/logo (2).png" alt="logo 2" />
-              <img src="./assets/brandlogo/logo (3).png" alt="logo 3" />
-              <img src="./assets/brandlogo/logo (4).png" alt="logo 4" />
-              <img src="./assets/brandlogo/logo (5).png" alt="logo 5" />
-              <img src="./assets/brandlogo/logo (6).png" alt="logo 6" />
-              <img src="./assets/brandlogo/logo (7).png" alt="logo 7" />
-              <img src="./assets/brandlogo/logo (8).png" alt="logo 8" />
-              <img src="./assets/brandlogo/logo (9).png" alt="logo 9" />
-              <img src="./assets/brandlogo/logo (10).png" alt="logo 10" />
-              <img src="./assets/brandlogo/logo (11).png" alt="logo 11" />
-              <img src="./assets/brandlogo/logo (12).png" alt="logo 12" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="feedback-card">
-        <p class="LibreFont">
-          Hope you’ve enjoyed <br />
-          the preview!
-        </p>
-      </div>
-      <img
-        class="replay-btn"
-        src="/assets/images/replay-btn.png"
-        alt="replay button"
-      />
+    <div class="feedback-card">
+      <p class="LibreFont">
+        Hope you’ve enjoyed <br />
+        the preview!
+      </p>
     </div>
-    <script src="index.js"></script>
-  </body>
+    <img class="replay-btn" src="/assets/images/replay-btn.png" alt="replay button" />
+  </div>
+  <script src="index.js"></script>
+</body>
+
 </html>
