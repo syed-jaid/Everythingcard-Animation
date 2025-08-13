@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Everythingcard Animation</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -71,14 +77,14 @@
             {Sender} Sent You an EverythingCard!
           </p>
         </div>
-        <p style="color: #3f3f3f; font-size: 12px">now</p>
+        <p style="color: #3f3f3f; font-size: 9px; margin-right: 5px">now</p>
       </div>
     </section>
 
     <!-- card animation -->
     <section class="card-main-div" style="display: none">
       <!-- card top text  -->
-      <div class="card-top-sender-text">
+      <div class="card-top-sender-text LibreFont">
         <h1>Sender Name</h1>
         <p>has sent you an EverythingCard!</p>
       </div>
@@ -91,11 +97,50 @@
             src="/assets/images/inner card 2.png"
             alt="inner card 1"
           />
-          <img
-            class="inner-card-1"
-            src="/assets/images/inner card 1.png"
-            alt="inner card 1"
-          />
+          <!-- inner card 1 -->
+          <div class="inner-card-1">
+            <img
+              class="element-1"
+              src="/assets/images/innercard/element-1.png"
+              alt="element 1"
+              style="z-index: 5"
+            />
+            <img
+              class="element-2"
+              src="/assets/images/innercard/element-2.png"
+              alt="element 2"
+              style="z-index: 6"
+            />
+            <img
+              class="element-3"
+              src="/assets/images/innercard/element-3.png"
+              alt="element 3"
+              style="z-index: 3"
+            />
+            <img
+              class="element-4"
+              src="/assets/images/innercard/svg-3.svg"
+              alt="element 5"
+              style="z-index: 2"
+            />
+
+            <div
+              class="element-5"
+              style="
+                z-index: 2;
+                width: 485px;
+                height: 461px;
+                background-color: #b41e23;
+              "
+            >
+              <img
+                class="element-5"
+                src="/assets/images/innercard/element-4.png"
+                alt="element 5"
+                style="z-index: 1"
+              />
+            </div>
+          </div>
           <!-- gift button  -->
           <img
             class="gift-btn"
@@ -106,11 +151,7 @@
         <div class="card-under-part">
           <div></div>
         </div>
-        <img
-          class="card-back-part"
-          src="/assets/images/card-back-part.png"
-          alt="card back part"
-        />
+        <div class="card-back-part"></div>
         <img
           class="card-stamp"
           src="/assets/images/card-stamp.png"
@@ -206,7 +247,7 @@
         </div>
       </section>
       <div class="feedback-card">
-        <p>
+        <p class="LibreFont">
           Hope you’ve enjoyed <br />
           the preview!
         </p>

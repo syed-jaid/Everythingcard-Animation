@@ -1,11 +1,16 @@
 body {
-  background: #ffeaa4;
+  font-family: "Roboto", sans-serif;
+  background: #aca384;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   margin: 0;
   overflow: hidden;
+}
+
+.LibreFont {
+  font-family: "Libre Baskerville", serif;
 }
 
 /* ///////////////////////////// 1nd ///////////////////////////// */
@@ -249,7 +254,7 @@ body {
 
 .card-top-sender-text h1 {
   color: #553e2e;
-  font-size: 52px;
+  font-size: 42px;
   font-weight: bold;
   text-align: center;
   margin: 0;
@@ -268,7 +273,7 @@ body {
 
 .card-top-sender-text p {
   color: #553e2e;
-  font-size: 42px;
+  font-size: 32px;
   font-weight: bold;
   text-align: center;
   margin: 0;
@@ -314,7 +319,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #b41e23;
+  background: #006f69;
   clip-path: polygon(
     99.868% 0%,
     99.868% 8.011%,
@@ -494,7 +499,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #b41e23;
+  background: #006f69;
   clip-path: polygon(
     99.662% 87.671%,
     99.561% 86.787%,
@@ -851,7 +856,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #b41e23;
+  background: #006f69;
   clip-path: polygon(
     99.662% 87.671%,
     99.561% 86.787%,
@@ -1209,7 +1214,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #b41e23;
+  background: #006f69;
   clip-path: path(
     "M484.36 0V460.8H0V0C0.25 13.56 3.58997 24.5 10.04 33.34C12.65 36.92 2.76001 26.98 215.68 240.18C239.45 263.98 249.5 259.38 268.68 240.18C481.37 27.22 471.6 37.0699 474.32 33.34C481.09 24.06 484.12 12.97 484.36 0Z"
   );
@@ -1219,7 +1224,9 @@ body {
   position: absolute;
   top: 0px;
   left: 0;
-  width: 100%;
+  width: 485px;
+  height: 461px;
+  background: #006f69;
   z-index: 1;
 }
 
@@ -1238,10 +1245,24 @@ body {
 
 .inner-card-1 {
   position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffe6e6;
   scale: 0.88;
   animation: inner-card-scale-up 0.4s ease-in-out forwards,
     inner-card-go-right 1s ease-in-out 0.4s forwards;
   animation-delay: 6.5s;
+}
+
+.inner-card-1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.element-5 {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .inner-card-2 {
@@ -1629,7 +1650,7 @@ body {
   }
   100% {
     z-index: 4;
-    scale: 3;
+    scale: 2.5;
     opacity: 1;
   }
 }
