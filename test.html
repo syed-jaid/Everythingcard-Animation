@@ -68,7 +68,7 @@
   </body>
 </html> -->
 
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -150,47 +150,6 @@
         paths.forEach(path => {
                 path.setAttribute('fill', '#33FF57'); // New color for all paths with 'changeable' class
             });
-      }
-    </script>
-  </body>
-</html> -->
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SVG Color Change with Object Tag</title>
-    <style>
-      .svg-container {
-        width: 100%;
-        height: auto;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="svg-container">
-      <!-- Using the Object tag to reference the external SVG file -->
-      <object id="svg-object" type="image/svg+xml" data="svg-3.svg"></object>
-    </div>
-
-    <button onclick="changeColor()">Change SVG Color</button>
-
-    <script>
-      function changeColor() {
-        // Access the SVG content inside the object element
-        const svgObject = document.getElementById("svg-object");
-
-        svgObject.onload = function () {
-          // Get the SVG document inside the object
-          const svgDoc = svgObject.contentDocument;
-          const paths = svgDoc.querySelectorAll(".changeable");
-
-          // Loop through each path and change its color
-          paths.forEach((path) => {
-            path.setAttribute("fill", "#33FF57"); // New color for all paths with 'changeable' class
-          });
-        };
       }
     </script>
   </body>

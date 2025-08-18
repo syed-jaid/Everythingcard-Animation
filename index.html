@@ -1,201 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Everythingcard Animation</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Everythingcard Animation</title>
-  <link rel="stylesheet" href="index.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet" />
-</head>
+  <body>
+    <!-- Background elements start  -->
+    <!-- top elements -->
+    <img
+      class="top-circle-elements"
+      src="/assets/bgElements/top-circle-elements.png"
+      alt="top circle elements"
+    />
+    <!-- bottom elements -->
+    <img
+      class="bottom-circle-elements"
+      src="/assets/bgElements/bottom-circle-elements.png"
+      alt="bottom circle elements"
+    />
+    <!-- left solid circle -->
+    <div class="left-solid-circle"></div>
+    <!-- right solid circle -->
+    <div class="right-solid-circle"></div>
 
-<body>
-  <!-- 1st phone frame animation -->
-  <section class="Phone-main-div" style="display: none">
-    <img class="phone-frame-1" src="/assets/images/phone.png" alt="Everythingcard mobile frame" />
+    <!-- left side big star  -->
+    <svg
+      width="89"
+      height="118"
+      viewBox="0 0 89 118"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="left-big-start"
+    >
+      <path
+        opacity=".75"
+        d="M38.876 59.37 43.558.844l3.679 60.867 22.407-18.06-18.06 22.073 37.122 3.01-36.453 3.679 20.735 26.754L46.233 76.76l-3.01 40.467-3.195-40.505-21.411 18.377 17.365-22.592L.914 69.303l35.237-4.383-18.883-24.615z"
+        fill="#A52F2B"
+      />
+    </svg>
+    <!-- left side small star  -->
+    <svg
+      width="65"
+      height="67"
+      viewBox="0 0 65 67"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="left-small-start"
+    >
+      <path
+        opacity=".35"
+        d="M27.694 30.106 30.649.352l3.59 29.754 29.98 3.406-29.77 3.047-3.166 29.755-3.59-29.755L.657 33.623z"
+        fill="#A52F2B"
+      />
+    </svg>
 
-    <!-- phone screen -->
-    <div class="phone-screen">
-      <!-- screen element and camera -->
-      <img class="phone-camera" src="/assets/images/camera.png" alt="camera" />
-      <img class="screen-time" src="/assets/images/screen-time.png" alt="screen time" />
-      <img class="element-1" src="/assets/images/screen-element-1.png" alt="screen element" />
-      <img class="element-2" src="/assets/images/screen-element-2.png" alt="screen element" />
-      <img class="element-3" src="/assets/images/screen-element-3.png" alt="screen element" />
-    </div>
+    <!-- left side smallest star -->
+    <img
+      class="smallest-star"
+      src="/assets/bgElements/smallest star.png"
+      alt="bottom circle elements"
+    />
 
-    <!-- element with text -->
-    <img class="element-with-text" src="/assets/images/screen-element-with-text.png" alt="screen element" />
+    <!-- right side big star  -->
+    <svg
+      width="84"
+      height="111"
+      viewBox="0 0 84 111"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="right-big-start"
+    >
+      <path
+        opacity=".35"
+        d="m46.015 50.136.053 1.014.772-.66 16.453-14.124-13.373 17.4-.554.72.904.082 28.335 2.588-28.51 3.547-.865.107.53.693L64.635 80.89l-7.074-6.022-10.666-9.078-.762-.648-.06.999-1.369 22.402-.96 15.716-1.422-16.117-2.01-22.79-.08-.894-.718.537-17.849 13.337L36.042 60.76l.605-.737-.95-.078L6.29 57.56l28.786-2.904.898-.09-.553-.714-16.638-21.467 21.578 18.072.757.634.064-.986 1.595-24.86 1.05-16.35 2.187 41.24Z"
+        fill="#A52F2B"
+        stroke="#000"
+      />
+    </svg>
 
-    <!-- confetti -->
-    <img class="confetti-image" src="/assets/images/notification-Confetti.png" alt="Confetti for notification" />
-    <!-- notification div  -->
-    <div class="notification-main-div">
-      <div>
-        <img style="width: 35px" src="/assets/images/notification-message.png" alt="notification message image" />
-        <p class="notification-msg-text">
-          {Sender} Sent You an EverythingCard!
-        </p>
+    <!-- right side small star  -->
+    <svg
+      width="65"
+      height="67"
+      viewBox="0 0 65 67"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="right-small-start"
+    >
+      <path
+        opacity="0.2"
+        d="M27.5372 30.2157L30.493 0.460938L34.0822 30.2157L64.0624 33.6213L34.2933 36.6685L31.1263 66.4232L27.5372 36.6685L0.5 33.7327L27.5372 30.2157Z"
+        fill="#A52F2B"
+      />
+    </svg>
+
+    <!-- right side smallest star  -->
+    <svg
+      width="46"
+      height="48"
+      viewBox="0 0 46 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="right-smallest-start"
+    >
+      <path
+        opacity=".75"
+        d="M19.883 21.522 21.98.406l2.547 21.116 21.276 2.417-21.127 2.163-2.247 21.116-2.547-21.116L.695 24.018z"
+        fill="#A52F2B"
+      />
+    </svg>
+
+    <!-- Background elements end  -->
+
+    <!-- 1st phone frame animation -->
+    <section class="Phone-main-div">
+      <img
+        class="phone-frame-1"
+        src="/assets/images/phone.png"
+        alt="Everythingcard mobile frame"
+      />
+
+      <!-- phone screen -->
+      <div class="phone-screen">
+        <!-- screen element and camera -->
+        <img
+          class="phone-camera"
+          src="/assets/images/camera.png"
+          alt="camera"
+        />
+        <img
+          class="screen-time"
+          src="/assets/images/screen-time.png"
+          alt="screen time"
+        />
+        <img
+          class="element-1"
+          src="/assets/images/screen-element-1.png"
+          alt="screen element"
+        />
+        <img
+          class="element-2"
+          src="/assets/images/screen-element-2.png"
+          alt="screen element"
+        />
+        <img
+          class="element-3"
+          src="/assets/images/screen-element-3.png"
+          alt="screen element"
+        />
       </div>
-      <p style="color: #3f3f3f; font-size: 9px; margin-right: 5px">now</p>
-    </div>
-  </section>
 
+      <!-- element with text -->
+      <img
+        class="element-with-text"
+        src="/assets/images/screen-element-with-text.png"
+        alt="screen element"
+      />
 
-  <!-- ????????? -->
-  <div class="main-inner-card" style="display: none;">
-    <img class="inner-card-2" src="/assets/images/inner card 2.png" alt="inner card 1" />
-    <!-- inner card 1 -->
-    <div class="inner-card-1">
-      <img class="card-element-1" src="/assets/images/innercard/element-1.png" alt="element 1" style="z-index: 5" />
-      <img class="card-element-2" src="/assets/images/innercard/element-2.png" alt="element 2" style="z-index: 6" />
-      <img class="card-element-3" src="/assets/images/innercard/element-3.png" alt="element 3" style="z-index: 3" />
-      <img class="card-element-4" src="/assets/images/innercard/svg-3.svg" alt="element 5" style="z-index: 2" />
-
-      <div class="card-element-5" style="
-                z-index: 2;
-                width: 485px;
-                height: 461px;
-                background-color: #b41e23;
-              ">
-        <img class="card-element-5" src="/assets/images/innercard/element-4.png" alt="element 5" style="z-index: 1" />
-      </div>
-    </div>
-    <!-- gift button  -->
-    <img class="gift-btn" src="/assets/images/gift-btn.png" alt="inner card 1" />
-  </div>
-  <!-- ????????? -->
-
-  <!-- card animation -->
-  <section class="card-main-div">
-    <!-- card top text  -->
-    <div class="card-top-sender-text LibreFont">
-      <h1>Sender Name</h1>
-      <p>has sent you an EverythingCard!</p>
-    </div>
-    <!-- main-card -->
-    <div class="main-card">
-      <!-- main inner card -->
-      <div class="main-inner-card">
-        <img class="inner-card-2" src="/assets/images/inner card 2.png" alt="inner card 1" />
-        <!-- inner card 1 -->
-        <div class="inner-card-1">
-          <img class="card-element-1" src="/assets/images/innercard/element-1.png" alt="element 1" style="z-index: 5" />
-          <img class="card-element-2" src="/assets/images/innercard/element-2.png" alt="element 2" style="z-index: 6" />
-          <img class="card-element-3" src="/assets/images/innercard/element-3.png" alt="element 3" style="z-index: 3" />
-          <img class="card-element-4" src="/assets/images/innercard/svg-3.svg" alt="element 5" style="z-index: 2" />
-
-          <div class="card-element-5" style="
-                z-index: 2;
-                width: 485px;
-                height: 461px;
-                background-color: #b41e23;
-              ">
-            <img class="card-element-5" src="/assets/images/innercard/element-4.png" alt="element 5"
-              style="z-index: 1" />
-          </div>
+      <!-- confetti -->
+      <img
+        class="confetti-image"
+        src="/assets/images/notification-Confetti.png"
+        alt="Confetti for notification"
+      />
+      <!-- notification div  -->
+      <div class="notification-main-div">
+        <div>
+          <img
+            style="width: 35px"
+            src="/assets/images/notification-message.png"
+            alt="notification message image"
+          />
+          <p class="notification-msg-text">
+            {Sender} Sent You an EverythingCard!
+          </p>
         </div>
-        <!-- gift button  -->
-        <img class="gift-btn" src="/assets/images/gift-btn.png" alt="inner card 1" />
+        <p style="color: #3f3f3f; font-size: 9px; margin-right: 5px">now</p>
       </div>
-      <div class="card-under-part">
-        <div></div>
-      </div>
-      <div class="card-back-part"></div>
-      <img class="card-stamp" src="/assets/images/card-stamp.png" alt="card stamp" />
+    </section>
 
-      <div class="card-top-after-open">
-        <div class="solid"></div>
-        <div class="golden-line"></div>
+    <!-- card animation -->
+    <section class="card-main-div" style="display: none">
+      <!-- card top text  -->
+      <div class="card-top-sender-text LibreFont">
+        <h1>Sender Name</h1>
+        <p>has sent you an EverythingCard!</p>
       </div>
 
-      <div class="card-top-part">
-        <div class="solid"></div>
-        <div class="golden-line"></div>
-      </div>
-
-      <div class="card-bottom-part">
-        <div class="solid"></div>
-        <div class="golden-line"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- last phone screen  -->
-  <div class="phone-2-main-div" style="display: none">
-    <section class="phone-2-screen">
-      <img class="phone-frame-2" src="/assets/images/phone-2.png" alt="Everythingcard mobile frame" />
-
-      <img class="phone-frame-2-logo" src="/assets/images/everything-card-logo.png" alt="Everythingcard logo" />
-
-      <div class="blur-layout"></div>
-
-      <p class="phone-2-secreen-text">Amount: 100$</p>
-      <div class="all-brand-div">
-        <div class="brand-div">
-          <div class="div-top"></div>
-          <div class="div-bottom"></div>
-          <div>
-            <img src="./assets/brandlogo/logo (19).png" alt="logo 1" />
-            <img src="./assets/brandlogo/logo (2).png" alt="logo 2" />
-            <img src="./assets/brandlogo/logo (3).png" alt="logo 3" />
-            <img src="./assets/brandlogo/logo (4).png" alt="logo 4" />
-            <img src="./assets/brandlogo/logo (5).png" alt="logo 5" />
-            <img src="./assets/brandlogo/logo (6).png" alt="logo 6" />
-            <img src="./assets/brandlogo/logo (7).png" alt="logo 7" />
-            <img src="./assets/brandlogo/logo (8).png" alt="logo 8" />
-            <img src="./assets/brandlogo/logo (9).png" alt="logo 9" />
-            <img src="./assets/brandlogo/logo (10).png" alt="logo 10" />
-            <img src="./assets/brandlogo/logo (11).png" alt="logo 11" />
-            <img src="./assets/brandlogo/logo (12).png" alt="logo 12" />
-            <img src="./assets/brandlogo/logo (13).png" alt="logo 13" />
-            <img src="./assets/brandlogo/logo (14).png" alt="logo 14" />
-            <img src="./assets/brandlogo/logo (15).png" alt="logo 15" />
-            <img src="./assets/brandlogo/logo (16).png" alt="logo 16" />
-            <img src="./assets/brandlogo/logo (17).png" alt="logo 17" />
-            <img src="./assets/brandlogo/logo (18).png" alt="logo 18" />
-            <img src="./assets/brandlogo/logo (1).png" alt="logo 19" />
-            <img src="./assets/brandlogo/logo (14).png" alt="logo 20" />
-            <img src="./assets/brandlogo/logo (10).png" alt="logo 10" />
-            <img src="./assets/brandlogo/logo (11).png" alt="logo 11" />
-            <img src="./assets/brandlogo/logo (12).png" alt="logo 12" />
-            <img src="./assets/brandlogo/logo (13).png" alt="logo 13" />
-            <img src="./assets/brandlogo/logo (19).png" alt="logo 14" />
-            <img src="./assets/brandlogo/logo (15).png" alt="logo 15" />
-            <img src="./assets/brandlogo/logo (16).png" alt="logo 16" />
-            <img src="./assets/brandlogo/logo (13).png" alt="logo 17" />
-            <img src="./assets/brandlogo/logo (8).png" alt="logo 18" />
-            <img src="./assets/brandlogo/logo (1).png" alt="logo 19" />
-            <img src="./assets/brandlogo/logo (14).png" alt="logo 20" />
-            <img src="./assets/brandlogo/logo (4).png" alt="logo 20" />
-            <img src="./assets/brandlogo/logo (19).png" alt="logo 1" />
-            <img src="./assets/brandlogo/logo (2).png" alt="logo 2" />
-            <img src="./assets/brandlogo/logo (3).png" alt="logo 3" />
-            <img src="./assets/brandlogo/logo (4).png" alt="logo 4" />
-            <img src="./assets/brandlogo/logo (5).png" alt="logo 5" />
-            <img src="./assets/brandlogo/logo (6).png" alt="logo 6" />
-            <img src="./assets/brandlogo/logo (7).png" alt="logo 7" />
-            <img src="./assets/brandlogo/logo (8).png" alt="logo 8" />
-            <img src="./assets/brandlogo/logo (9).png" alt="logo 9" />
-            <img src="./assets/brandlogo/logo (10).png" alt="logo 10" />
-            <img src="./assets/brandlogo/logo (11).png" alt="logo 11" />
-            <img src="./assets/brandlogo/logo (12).png" alt="logo 12" />
+      <!-- main-card -->
+      <div class="main-card">
+        <!-- main inner card -->
+        <div class="main-inner-card">
+          <!-- inner card 2 -->
+          <div class="inner-card-2">
+            <img src="/assets/images/inner card 2.png" alt="inner card 2" />
           </div>
+
+          <!-- inner card 1 -->
+          <div class="inner-card-1">
+            <img
+              class="card-element-1"
+              src="/assets/images/innercard/element-1.png"
+              alt="element 1"
+              style="z-index: 5"
+            />
+            <img
+              class="card-element-2"
+              src="/assets/images/innercard/element-2.png"
+              alt="element 2"
+              style="z-index: 6"
+            />
+            <img
+              class="card-element-3"
+              src="/assets/images/innercard/element-3.png"
+              alt="element 3"
+              style="z-index: 4"
+            />
+            <div class="card-element-4" style="z-index: 3">
+              <svg
+                width="545"
+                height="546"
+                viewBox="0 0 545 546"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1924_172)">
+                  <g clip-path="url(#clip1_1924_172)">
+                    <g clip-path="url(#clip2_1924_172)">
+                      <path
+                        class="changeable"
+                        d="M-0.382812 0.5V545.529H544.804V0.5H-0.382812ZM391.241 254.615V400.022H151.915V254.615H129.422V160.146H162.186C162.186 160.146 162.638 115.47 196.376 115.315C196.376 115.315 165.332 85.0189 196.828 58.9279C225.025 35.5584 260.247 69.7295 271.579 87.2206C282.912 69.7295 318.128 35.5584 346.331 58.9279C377.821 85.0189 346.783 115.315 346.783 115.315C380.521 115.47 380.973 160.146 380.973 160.146H413.734V254.615H391.241Z"
+                        fill="#B41E23"
+                      />
+                      <path
+                        class="changeable"
+                        d="M329.795 112.194C348.239 94.1996 347.341 55.9625 306.853 75.7614C266.365 95.5603 284.809 159.88 284.809 159.88C284.809 159.88 311.352 130.189 329.795 112.194Z"
+                        fill="#B41E23"
+                      />
+                      <path
+                        class="changeable"
+                        d="M200.089 128.838C178.497 127.488 181.194 159.879 181.194 159.879H239.673C239.673 159.879 221.681 130.188 200.086 128.838H200.089Z"
+                        fill="#B41E23"
+                      />
+                      <path
+                        class="changeable"
+                        d="M237.426 75.7575C196.939 55.9586 196.041 94.1957 214.484 112.19C232.928 130.185 259.471 159.876 259.471 159.876C259.471 159.876 277.914 95.5564 237.426 75.7575Z"
+                        fill="#B41E23"
+                      />
+                      <path
+                        class="changeable"
+                        d="M344.196 128.838C322.604 130.188 304.609 159.879 304.609 159.879H363.089C363.089 159.879 365.789 127.491 344.196 128.838Z"
+                        fill="#B41E23"
+                      />
+                    </g>
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_1924_172">
+                    <rect width="544.3" height="545.3" fill="white" />
+                  </clipPath>
+                  <clipPath id="clip1_1924_172">
+                    <rect width="544.3" height="545.3" fill="white" />
+                  </clipPath>
+                  <clipPath id="clip2_1924_172">
+                    <rect
+                      width="544.3"
+                      height="544.3"
+                      fill="white"
+                      transform="translate(0 0.5)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div
+              class="card-element-5"
+              style="
+                z-index: 2;
+                width: 485px;
+                height: 461px;
+                background-color: #b41e23;
+              "
+            >
+              <img
+                class="card-element-5"
+                src="/assets/images/innercard/element-4.png"
+                alt="element 5"
+                style="z-index: 1"
+              />
+            </div>
+          </div>
+
+          <!-- gift button  -->
+          <img
+            class="gift-btn"
+            src="/assets/images/gift-btn.png"
+            alt="inner card 1"
+          />
+        </div>
+
+        <div class="card-under-part">
+          <div></div>
+        </div>
+        <div class="card-back-part"></div>
+        <img
+          class="card-stamp"
+          src="/assets/images/card-stamp.png"
+          alt="card stamp"
+        />
+
+        <div class="card-top-after-open">
+          <div class="solid"></div>
+          <div class="golden-line"></div>
+        </div>
+
+        <div class="card-top-part">
+          <div class="solid"></div>
+          <div class="golden-line"></div>
+        </div>
+
+        <div class="card-bottom-part">
+          <div class="solid"></div>
+          <div class="golden-line"></div>
         </div>
       </div>
     </section>
-    <div class="feedback-card">
-      <p class="LibreFont">
-        Hope you’ve enjoyed <br />
-        the preview!
-      </p>
-    </div>
-    <img class="replay-btn" src="/assets/images/replay-btn.png" alt="replay button" />
-  </div>
-  <script src="index.js"></script>
-</body>
 
+    <!-- last phone screen  -->
+    <div class="phone-2-main-div" style="display: none">
+      <section class="phone-2-screen">
+        <img
+          class="phone-frame-2"
+          src="/assets/images/phone-2.png"
+          alt="Everythingcard mobile frame"
+        />
+
+        <img
+          class="phone-frame-2-logo"
+          src="/assets/images/everything-card-logo.png"
+          alt="Everythingcard logo"
+        />
+
+        <div class="blur-layout"></div>
+
+        <p class="phone-2-secreen-text">Amount: 100$</p>
+        <div class="all-brand-div">
+          <div class="brand-div">
+            <div class="div-top"></div>
+            <div class="div-bottom"></div>
+            <div>
+              <img src="./assets/brandlogo/logo (19).png" alt="logo 1" />
+              <img src="./assets/brandlogo/logo (2).png" alt="logo 2" />
+              <img src="./assets/brandlogo/logo (3).png" alt="logo 3" />
+              <img src="./assets/brandlogo/logo (4).png" alt="logo 4" />
+              <img src="./assets/brandlogo/logo (5).png" alt="logo 5" />
+              <img src="./assets/brandlogo/logo (6).png" alt="logo 6" />
+              <img src="./assets/brandlogo/logo (7).png" alt="logo 7" />
+              <img src="./assets/brandlogo/logo (8).png" alt="logo 8" />
+              <img src="./assets/brandlogo/logo (9).png" alt="logo 9" />
+              <img src="./assets/brandlogo/logo (10).png" alt="logo 10" />
+              <img src="./assets/brandlogo/logo (11).png" alt="logo 11" />
+              <img src="./assets/brandlogo/logo (12).png" alt="logo 12" />
+              <img src="./assets/brandlogo/logo (13).png" alt="logo 13" />
+              <img src="./assets/brandlogo/logo (14).png" alt="logo 14" />
+              <img src="./assets/brandlogo/logo (15).png" alt="logo 15" />
+              <img src="./assets/brandlogo/logo (16).png" alt="logo 16" />
+              <img src="./assets/brandlogo/logo (17).png" alt="logo 17" />
+              <img src="./assets/brandlogo/logo (18).png" alt="logo 18" />
+              <img src="./assets/brandlogo/logo (1).png" alt="logo 19" />
+              <img src="./assets/brandlogo/logo (14).png" alt="logo 20" />
+              <img src="./assets/brandlogo/logo (10).png" alt="logo 10" />
+              <img src="./assets/brandlogo/logo (11).png" alt="logo 11" />
+              <img src="./assets/brandlogo/logo (12).png" alt="logo 12" />
+              <img src="./assets/brandlogo/logo (13).png" alt="logo 13" />
+              <img src="./assets/brandlogo/logo (19).png" alt="logo 14" />
+              <img src="./assets/brandlogo/logo (15).png" alt="logo 15" />
+              <img src="./assets/brandlogo/logo (16).png" alt="logo 16" />
+              <img src="./assets/brandlogo/logo (13).png" alt="logo 17" />
+              <img src="./assets/brandlogo/logo (8).png" alt="logo 18" />
+              <img src="./assets/brandlogo/logo (1).png" alt="logo 19" />
+              <img src="./assets/brandlogo/logo (14).png" alt="logo 20" />
+              <img src="./assets/brandlogo/logo (4).png" alt="logo 20" />
+              <img src="./assets/brandlogo/logo (19).png" alt="logo 1" />
+              <img src="./assets/brandlogo/logo (2).png" alt="logo 2" />
+              <img src="./assets/brandlogo/logo (3).png" alt="logo 3" />
+              <img src="./assets/brandlogo/logo (4).png" alt="logo 4" />
+              <img src="./assets/brandlogo/logo (5).png" alt="logo 5" />
+              <img src="./assets/brandlogo/logo (6).png" alt="logo 6" />
+              <img src="./assets/brandlogo/logo (7).png" alt="logo 7" />
+              <img src="./assets/brandlogo/logo (8).png" alt="logo 8" />
+              <img src="./assets/brandlogo/logo (9).png" alt="logo 9" />
+              <img src="./assets/brandlogo/logo (10).png" alt="logo 10" />
+              <img src="./assets/brandlogo/logo (11).png" alt="logo 11" />
+              <img src="./assets/brandlogo/logo (12).png" alt="logo 12" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="feedback-card">
+        <p class="LibreFont">
+          Hope you’ve enjoyed <br />
+          the preview!
+        </p>
+      </div>
+      <img
+        class="replay-btn"
+        src="/assets/images/replay-btn.png"
+        alt="replay button"
+      />
+    </div>
+
+    <script src="index.js"></script>
+  </body>
 </html>
