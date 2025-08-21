@@ -27,21 +27,21 @@ document.addEventListener("DOMContentLoaded", function () {
   phoneScreen.style.display = "flex";
 });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const elementWithText = document.querySelector(".element-with-text");
-//   const phoneMainDiv = document.querySelector(".Phone-main-div");
-//   const nextDiv = document.querySelector(".card-main-div");
-//   const MainCardDiv = document.querySelector(".card-main-div");
-//   const nextDiv2 = document.querySelector(".phone-2-main-div");
+document.addEventListener("DOMContentLoaded", function () {
+  const elementWithText = document.querySelector(".element-with-text");
+  const phoneMainDiv = document.querySelector(".Phone-main-div");
+  const nextDiv = document.querySelector(".card-main-div");
+  const MainCardDiv = document.querySelector(".card-main-div");
+  const nextDiv2 = document.querySelector(".phone-2-main-div");
 
-//   elementWithText.addEventListener("animationend", () => {
-//     setTimeout(() => {
-//       phoneMainDiv.style.display = "none";
-//       nextDiv.style.display = "flex";
-//     }, 2000);
-//     setTimeout(() => {
-//       MainCardDiv.style.display = "none";
-//       nextDiv2.style.display = "flex";
-//     }, 13000);
-//   });
-// });
+  elementWithText.addEventListener("animationend", () => {
+    setTimeout(() => {
+      phoneMainDiv.style.display = "none";
+      nextDiv.style.display = "flex";
+    }, 2000);
+    setTimeout(() => {
+      MainCardDiv.style.display = "none";
+      nextDiv2.style.display = "flex";
+    }, 13000);
+  });
+});
